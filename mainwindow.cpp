@@ -31,11 +31,11 @@ void MainWindow::abrirCarreraWindow()
 }
 
 void MainWindow::setupImages() {
-    QPixmap image(":/images/image1.jpg");
-    ui->imageLabel->setPixmap(image.scaled(ui->imageLabel->size(), Qt::KeepAspectRatio));
+   // QPixmap image(":/images/image1.jpg");
+   // ui->imageLabel->setPixmap(image.scaled(ui->imageLabel->size(), Qt::KeepAspectRatio));
 
-    QPixmap image2(":/images/image2.jpg");
-    ui->imageLabel2->setPixmap(image2.scaled(ui->imageLabel2->size(), Qt::KeepAspectRatio));
+   // QPixmap image2(":/images/image2.jpg");
+  //  ui->imageLabel2->setPixmap(image2.scaled(ui->imageLabel2->size(), Qt::KeepAspectRatio));
 }
 
 void MainWindow::showEvent(QShowEvent *event) {

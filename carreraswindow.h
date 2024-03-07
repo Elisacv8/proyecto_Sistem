@@ -19,7 +19,7 @@ signals:
     void volverClicked();
 
 private slots:
-    void volver(); // Método para volver al inicio
+    void volver();
 
 private:
     Ui::CarrerasWindow *ui;
