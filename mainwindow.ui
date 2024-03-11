@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="W_Inicio" native="true">
     <property name="enabled">
@@ -26,68 +29,72 @@
       <height>61</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(16, 0, 195);</string>
+    </property>
     <widget class="QPushButton" name="loginButton">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>10</y>
-       <width>111</width>
-       <height>31</height>
+       <width>161</width>
+       <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(176, 176, 176, 255), stop:1 rgba(255, 255, 255, 255));
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Iniciar Sesion </string>
      </property>
     </widget>
-    <widget class="QLabel" name="imageLabel">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>0</y>
-       <width>241</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="recursos.qrc">:/images/imagenes/Imagen1.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
    </widget>
-   <widget class="QWidget" name="W_B" native="true">
+   <widget class="QLabel" name="imageLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>761</width>
-      <height>421</height>
+      <x>530</x>
+      <y>20</y>
+      <width>241</width>
+      <height>61</height>
      </rect>
     </property>
-    <widget class="QLabel" name="imageLabel2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>5</y>
-       <width>761</width>
-       <height>411</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="recursos.qrc">:/images/imagenes/Imagen2.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/images/imagenes/Imagen1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>771</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/imagenes/home.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/imagenes/Imagen2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>W_Inicio</zorder>
+   <zorder>imageLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -95,7 +102,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
