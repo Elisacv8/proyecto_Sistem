@@ -19,12 +19,15 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(59, 179, 216);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="labelProgramasPregrado">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>40</y>
+      <x>230</x>
+      <y>30</y>
       <width>191</width>
       <height>41</height>
      </rect>
@@ -68,9 +71,12 @@
       <rect>
        <x>20</x>
        <y>10</y>
-       <width>111</width>
-       <height>31</height>
+       <width>141</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(14, 255, 42);</string>
      </property>
      <property name="text">
       <string>Inicio</string>
@@ -116,8 +122,15 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>11</pointsize>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 127);</string>
      </property>
      <property name="text">
       <string>Facultad de Arte Y Diseño</string>
@@ -131,6 +144,9 @@
        <width>381</width>
        <height>192</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
    </widget>
@@ -151,6 +167,9 @@
        <width>371</width>
        <height>191</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
     <widget class="QLabel" name="labelFacultad2_2">
@@ -222,7 +241,7 @@
      <x>0</x>
      <y>0</y>
      <width>828</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
