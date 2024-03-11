@@ -1,10 +1,12 @@
+// mainwindow.h
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QShowEvent> // Necesario para QShowEvent
+#include <QShowEvent>
 #include "loginwindow.h"
 #include "carreraswindow.h"
+#include "panelprincipal.h" // Agregar la inclusión del panel principal
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,14 +22,16 @@ public:
 
 private slots:
     void on_loginButton_clicked();
-    void abrirCarreraWindow(); // Método para abrir la ventana de carreras
-    void setupImages(); // Método para configurar las imágenes
-    void showEvent(QShowEvent *event) override; // Sobreescribir el evento de mostrar
+    void abrirCarreraWindow();
+    void setupImages();
+    void showEvent(QShowEvent *event) override;
+    void mostrarPanelPrincipal(const QString &carreraSeleccionada); // Nuevo slot para mostrar el panel principal
 
 private:
     Ui::MainWindow *ui;
     LoginWindow *loginWindow;
-    CarrerasWindow *carreraWindow; // Agregamos un puntero a CarrerasWindow
+    CarrerasWindow *carreraWindow;
+    PanelPrincipal *panelPrincipal; // Agregar un puntero al panel principal
 };
 
 #endif // MAINWINDOW_H
