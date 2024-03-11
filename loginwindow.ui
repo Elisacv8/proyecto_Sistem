@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>787</width>
-    <height>600</height>
+    <height>615</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,11 +17,16 @@
    <widget class="QPushButton" name="pushButtonIngresar">
     <property name="geometry">
      <rect>
-      <x>219</x>
-      <y>470</y>
+      <x>260</x>
+      <y>380</y>
       <width>361</width>
-      <height>24</height>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(128, 128, 128, 255), stop:1 rgba(255, 255, 255, 255));
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Ingresar </string>
@@ -44,9 +49,14 @@
       <rect>
        <x>20</x>
        <y>10</y>
-       <width>111</width>
-       <height>31</height>
+       <width>131</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(128, 128, 128, 255), stop:1 rgba(255, 255, 255, 255));
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Inicio</string>
@@ -55,7 +65,7 @@
     <widget class="QLabel" name="imageLabel">
      <property name="geometry">
       <rect>
-       <x>540</x>
+       <x>530</x>
        <y>0</y>
        <width>241</width>
        <height>61</height>
@@ -75,40 +85,40 @@
    <widget class="QComboBox" name="comboBoxTipoUsuario">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>400</y>
-      <width>72</width>
-      <height>24</height>
+      <x>310</x>
+      <y>330</y>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditCorreo">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>350</y>
+      <x>310</x>
+      <y>280</y>
       <width>291</width>
-      <height>24</height>
+      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditPass">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>300</y>
+      <x>310</x>
+      <y>230</y>
       <width>291</width>
-      <height>24</height>
+      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditUsuario">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>250</y>
+      <x>310</x>
+      <y>180</y>
       <width>291</width>
-      <height>24</height>
+      <height>31</height>
      </rect>
     </property>
    </widget>
@@ -116,54 +126,97 @@
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>410</y>
-      <width>101</width>
-      <height>16</height>
+      <y>330</y>
+      <width>161</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+    </property>
     <property name="text">
-     <string>Tipo de Usuario </string>
+     <string>Tipo de Usuario:</string>
     </property>
    </widget>
    <widget class="QLabel" name="QL_Correo">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>350</y>
-      <width>101</width>
-      <height>16</height>
+      <x>120</x>
+      <y>275</y>
+      <width>181</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 127);</string>
+    </property>
     <property name="text">
-     <string>Correo Elctronico</string>
+     <string>Correo Electrónico:</string>
     </property>
    </widget>
    <widget class="QLabel" name="QL_Pass">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>300</y>
-      <width>91</width>
-      <height>16</height>
+      <x>190</x>
+      <y>230</y>
+      <width>111</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 127);</string>
+    </property>
     <property name="text">
-     <string>Contraseña</string>
+     <string>Contraseña:</string>
     </property>
    </widget>
    <widget class="QLabel" name="QL_Usuario">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>250</y>
-      <width>49</width>
-      <height>16</height>
+      <x>220</x>
+      <y>180</y>
+      <width>111</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 127);</string>
+    </property>
     <property name="text">
-     <string>Usuario</string>
+     <string>Usuario:</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-90</y>
+      <width>881</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/imagenes/imgfondo_1.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>pushButtonIngresar</zorder>
+   <zorder>W_Inicio</zorder>
+   <zorder>comboBoxTipoUsuario</zorder>
+   <zorder>lineEditCorreo</zorder>
+   <zorder>lineEditPass</zorder>
+   <zorder>lineEditUsuario</zorder>
+   <zorder>QL_TUsuario</zorder>
+   <zorder>QL_Correo</zorder>
+   <zorder>QL_Pass</zorder>
+   <zorder>QL_Usuario</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -171,7 +224,7 @@
      <x>0</x>
      <y>0</y>
      <width>787</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
