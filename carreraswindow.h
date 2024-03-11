@@ -1,7 +1,13 @@
+// carreraswindow.h
 #ifndef CARRERASWINDOW_H
 #define CARRERASWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidgetItem>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QTextStream>
+#include <QTableWidgetItem> // Agregar la inclusión del encabezado QTableWidgetItem
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class CarrerasWindow; }
@@ -17,9 +23,12 @@ public:
 
 signals:
     void volverClicked();
+    void carreraSeleccionada(const QString &nombreCarrera); // Nueva señal para enviar la carrera seleccionada
 
 private slots:
     void volver(); // Método para volver al inicio
+    void onCarreraSeleccionada(QListWidgetItem *item); // Nuevo slot para manejar la selección de la carrera
+    void cargarArchivo();
 
 private:
     Ui::CarrerasWindow *ui;
