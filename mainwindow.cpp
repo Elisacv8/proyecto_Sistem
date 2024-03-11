@@ -1,3 +1,4 @@
+// mainwindow.cpp
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -7,9 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     loginWindow = new LoginWindow(this);
-    carreraWindow = new CarrerasWindow(this); // Inicializamos carreraWindow
+    carreraWindow = new CarrerasWindow(this);
+    panelPrincipal = new PanelPrincipal(this); // Inicializar el panel principal
 
     connect(loginWindow, &LoginWindow::ingresarClicked, this, &MainWindow::abrirCarreraWindow);
+    connect(carreraWindow, &CarrerasWindow::carreraSeleccionada, this, &MainWindow::mostrarPanelPrincipal); // Conexión para mostrar el panel principal
 }
 
 MainWindow::~MainWindow()
@@ -35,10 +38,16 @@ void MainWindow::setupImages() {
     ui->imageLabel->setPixmap(image.scaled(ui->imageLabel->size(), Qt::KeepAspectRatio));
 
     QPixmap image2(":/images/image2.jpg");
-    ui->imageLabel2->setPixmap(image2.scaled(ui->imageLabel2->size(), Qt::KeepAspectRatio));
+    ui->imageLabel->setPixmap(image2.scaled(ui->imageLabel->size(), Qt::KeepAspectRatio)); // Cambiar de imageLabel2 a imageLabel
 }
 
 void MainWindow::showEvent(QShowEvent *event) {
     QMainWindow::showEvent(event);
     setupImages();
+}
+
+void MainWindow::mostrarPanelPrincipal(const QString &carreraSeleccionada)
+{
+    panelPrincipal->show(); // Mostrar el panel principal
+    carreraWindow->hide(); // Ocultar la ventana de carreras
 }
